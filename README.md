@@ -1,2 +1,2 @@
 # Intership
-<img src="/images/image.jpg">
+<img src="/Ekal/images/image.jpg">
