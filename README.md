@@ -1,2 +1,2 @@
 # Intership
-<img src="/images/image.png">
+<img src="/images/image.jpg">
