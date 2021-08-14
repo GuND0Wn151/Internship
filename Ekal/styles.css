@@ -1,0 +1,81 @@
+/* body{
+font-family: 'Josefin Sans', sans-serif;
+
+} */
+.navbar-inverse{
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      border-color: transparent;
+      font-family: 'Josefin Sans', sans-serif;
+}
+#mynav .navbar-nav li a{
+      color:#1eeee7;
+      font-size: 15px;
+}
+ .dropdown-menu li a{
+padding: 10px 5px 5px 10px;
+align-items: center;
+border-color: red;
+}
+#mynav #course{
+      transition: all 0.3s ease-in-out;
+}
+.navbar-header .navbar-brand{
+      color:#ddeff7;
+}
+#mynav #course:hover{
+      background-color: aliceblue;
+}
+#mynav a:hover{
+      background-color: aliceblue;
+}
+.dropdown-menu{
+      display: none;
+      position: absolute;
+      background-color: abeige;
+      box-shadow: 2px 5px 4px 5px rbga(0,0,0,-.2);
+      z-index: 1;
+}
+#sub-dropdown-menu{
+      display: none;
+      position: absolute;
+      border-color: antiquewhite;
+      margin-left: 180px;
+      margin-top: -25px;
+}
+.collapse navbar-collapse{
+      align-content: flex-end;
+}
+#sub-dropdown-menu a, .dropdown-menu a {
+      color: #000 !important;
+      font-size: 15px !important ;
+}
+.dropdown:hover .dropdown-menu{
+      display: block;
+      transition: all 0.5s ease-in-out;
+}
+.dropdown .dropdown-menu a:hover{background:rgb(179, 238, 235)}
+
+#sub-dropdown:hover #sub-dropdown-menu{
+      display: block;
+}
+img {
+      height: 100vh;
+    }
+.carousel .item {
+      height: 500px;
+      object-fit: cover;
+      background-size: cover;
+      background-repeat:no-repeat;
+}
+    
+.item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+}
+
+.item .carousel-caption{
+      color: whitesmoke;
+      font-size: 20px;
+}
