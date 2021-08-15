@@ -67,7 +67,7 @@ align-items: center;
 background-color: transparent;
 width: 300px;
 height: 300px;
-border: 1px solid #f1f1f1;
+/* border: 1px solid #f1f1f1; */
 perspective: 1000px; 
 }
 
@@ -88,6 +88,20 @@ transform-style: preserve-3d;
 transform: rotateY(180deg);
 }
 
+.parallax {
+  /* The image used */
+  /* background-image: url("./images/background.png"); */
+ 
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .flip-card-front, .flip-card-back {
 position: absolute;
@@ -102,7 +116,7 @@ backface-visibility: hidden;
 }
 
 .flip-card-front {
-background-color: #bbb;
+
 color: black;
 }
 
@@ -127,12 +141,14 @@ transform: rotateY(180deg);
       width: 100%;
       object-fit: contain;
 }
-
-@media screen and (max-width: 500px){
+/* this is for making it responsive */
+@media screen and (max-width: 574px){
       #test{
         display: flex;
         flex-direction: column;
         align-content: center;
+        margin-left: 70px;
+        margin-bottom: 70px;
       }
       
 }
@@ -281,7 +297,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #2ceeee;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -300,11 +316,11 @@ ul{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color:  #2ceeee;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
-	display: inline-block;
+	display: inline-block; 
 	height: 40px;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
@@ -331,4 +347,70 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+@media(max-width: 574px){
+
+      #counter_res{
+            text-align: center;
+            width: 250px;
+        display: flex;
+        margin-left: 75px;
+        flex-direction: column;
+    }
+    }
+
+#zoom {
+padding: 20px;
+
+transition: transform .2s; /* Animation */
+width: 400px;
+height: 400px;
+margin: 0 auto;
+}
+
+#zoom:hover {
+transform: scale(1.5); 
+}
+.parallax2 {
+
+  background-image: url("./images/background.gif");
+
+
+  min-height: 500px; 
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.counter_item{
+      padding: 20px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background: linear-gradient(to right, #834d9b, #d04ed6); 
+      box-shadow: inset 2px 2px 9px #131414;
+      cursor: pointer;
+}
+.counter_item:hover{
+      box-shadow: 1px 2px 9px #131414;
+}
+.counter_item i{
+      font-size: 40px;
+      color: #e0eafc;
+}
+.counter_item p{
+      font-size: 25px;
+      padding: 12px 0px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #070707;
+}
+.counter_item h4{
+      color: #131414;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      
 }
