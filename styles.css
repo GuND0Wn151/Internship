@@ -1,6 +1,6 @@
  body{
 font-family: 'Josefin Sans', sans-serif;
-background-image: "Ekal/images/background.png";
+background-image: "/images/background.png";
 } 
 .navbar-inverse{
       background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
