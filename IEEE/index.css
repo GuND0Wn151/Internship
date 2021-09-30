@@ -1,0 +1,209 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav{
+	justify-content: space-between;
+  color: white;
+}
+
+.parallax div{
+text-align: center;
+align-items: center;
+}
+.parallax {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.35)),url("images/img3.png");
+  color: white;
+  min-height: 540px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainheader{
+  position: absolute;
+  color: white;
+  margin: 12% auto auto 7%;
+  width: 80%;
+  height: auto;
+}
+.aboutuscontainer{
+  display: flex;
+   width: 100%;
+  height: auto;
+  margin:5% auto auto auto;
+}
+.aboutus{
+  position: relative;
+}
+.aboutusimage{
+  width: 95%;
+  position: relative;
+  height: 430px;
+  margin: 2% 4% 0% auto;
+
+}
+.imagebox{
+  width: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/img1.jpg");
+  margin:1% auto auto 1.4%;
+}
+.aboutusdata{
+  width: 50%;
+  margin: 0% auto auto 48%;
+  position: absolute;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+.aboutusdata #abtheading{
+  text-align: center;
+position: relative;
+}
+
+.lectures{
+  width: 95%;
+  margin-left: 2%;
+}
+.lecturescontainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto 5% auto;
+}
+.imgcircle{
+position: relative;
+width: 100%;
+margin: auto 3% auto 3%;
+  text-align: center;
+}
+.lecturesdata p,h{
+  margin: 3% auto auto 4%;
+  text-align: center;
+}
+.lectures .lecturesheader p::after,.lectures .lecturesheader p::before,.vsmi .vsminame p::after,.vsmi .vsminame p::before{
+    content: "";
+    width: 20%;
+    height: 1px;
+    display: inline-block;
+    background: #37517e;
+    margin: 10px 10px;
+}
+
+.vsmi{
+  width: 95%;
+  margin-left: 2.3%;
+}
+.vsmi-image{
+  text-align: center;
+}
+.vsmi-data{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.dataa{
+  width: 47%;
+  margin: 3% 3% 3% 3%;
+}
+.dataa li{
+margin: 3% 3% 3% 3%;
+}
+.vsmi-image img{
+  width: 45%;
+  height: 20%;
+}
+@media only screen and (max-width: 550px){
+  .aboutuscontainer,.aboutus{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+.footer{
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      isolation: isolate;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #2ceeee;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color:  #2ceeee;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block; 
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
